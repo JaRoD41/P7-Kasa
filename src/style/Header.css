@@ -1,0 +1,11 @@
+.headerWrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.headerWrapper__fig{
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+
+}

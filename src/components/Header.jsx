@@ -10,7 +10,6 @@ export default function Header() {
 				<img className="logo" src={logo} alt="logo de l'agence kasa" />
 			</figure>
 			<Nav className="nav-header" />
-			<h1>TEST HEADER</h1>
 		</header>
 	)
 }

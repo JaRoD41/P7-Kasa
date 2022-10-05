@@ -1,9 +1,9 @@
-.headerWrapper{
+.headerWrap{
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-.headerWrapper__fig{
+.headerWrap__fig{
     width: 75%;
     display: flex;
     align-items: flex-start;

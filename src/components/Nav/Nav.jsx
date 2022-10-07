@@ -4,7 +4,7 @@ import '../Nav/Nav.scss'
 
 export default function Nav() {
   return (
-		<nav className="nav-container">
+		<nav className="nav-header">
 			<Link to="/" className="nav-header_link-home">
 				Accueil
 			</Link>

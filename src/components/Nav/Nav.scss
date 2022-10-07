@@ -1,25 +1,21 @@
-.nav-container{
-    position: relative;
+.nav-header{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     width: 309px;
     height: 34px;
-}
-.nav-header_link-home{
-    position: absolute;
-    left: 75.08%;
-}
-.nav-header_link-home, .nav-header_link-about{
-    color: #FF6060;
-    text-decoration: none;
-    font-size: normal;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: right;
-    line-height: 34px;
-}
 
-.nav-header_link-home:hover, .nav-header_link-about:hover{
-    text-decoration-line: underline;
+    &_link-home, &_link-about{
+        color: #FF6060;
+        text-decoration: none;
+        font-size: normal;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: right;
+        line-height: 34px;
+        
+        &:hover{
+            text-decoration-line: underline;
+        }
+    }
 }

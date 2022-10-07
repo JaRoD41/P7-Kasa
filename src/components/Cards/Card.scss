@@ -1,0 +1,18 @@
+.card_logement{
+    display: flex;
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../assets/images/fond-card.png);
+    border-radius: 10px;
+    margin: 56px 50px;
+}
+
+.cards-container{
+    display: flex;
+    height: 829px;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    margin-top: 43px;
+    flex-wrap: wrap;
+}

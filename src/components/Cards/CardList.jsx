@@ -1,9 +1,11 @@
 import React from 'react'
+import Card from './Card'
+import './Card.scss'
 
 export default function CardList() {
   return (
-    <div>
-      <h1>CardList</h1>
+    <div className='cards-container'>
+      <Card />
     </div>
   )
 }

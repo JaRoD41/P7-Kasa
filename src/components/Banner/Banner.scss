@@ -3,11 +3,13 @@
     width: 100%;
     max-width: 1240px;
     height: 223px;
-    background-image: url(../../assets/images/background-banner.png);
+    background: url(../../assets/images/background-banner.png), url(../../assets/images/fond-noir-banner.png);
     mix-blend-mode: darken;
+    opacity: 1;
     border-radius: 25px;
     align-items: center;
     justify-content: center;
+    margin-top: 63px;
 }
 
 .banner-text{

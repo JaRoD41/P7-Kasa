@@ -3,11 +3,15 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    width: 100%;
+    max-width: 1240px;
+    border: 2px solid blueviolet;
 }
 .headerWrap__fig{
     display: flex;
     align-items: flex-start;
     margin: 0;
+    border: 1px solid rgb(57, 57, 33);
 }
 .logo img{
     width: 210px;

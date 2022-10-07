@@ -1,7 +1,7 @@
 import React from 'react'
-import logo from '../assets/images/LOGO.svg'
-import Nav from './Nav'
-import '../style/Header.css'
+import logo from '../../assets/images/LOGO.svg'
+import Nav from '../Nav/Nav'
+import '../Header/Header.css'
 
 export default function Header() {
   return (

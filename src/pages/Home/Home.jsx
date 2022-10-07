@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "../../components/Banner"
-import CardList from "../../components/CardList"
-import Footer from "../../components/Footer"
+import Banner from "../../components/Banner/Banner"
+import CardList from "../../components/Cards/CardList"
+import Footer from "../../components/Footer/Footer"
 
 export default function Home() {
 	return (

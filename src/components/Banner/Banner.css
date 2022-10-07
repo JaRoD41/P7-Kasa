@@ -6,16 +6,14 @@
 
 .banner-container{
     display: flex;
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     height: 223px;
-    background: url(../assets/images/background-banner.png);
+    background-image: url(../../assets/images/background-banner.png);
     mix-blend-mode: darken;
     border-radius: 25px;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 100px;
-    top: 171px;
 }
 
 .banner-text{

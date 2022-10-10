@@ -6,7 +6,9 @@ export default function Card({cover, title}) {
   return (
 		<article className="card_logement">
 			<img src={cover} alt="location" />
-			<h2>{title}</h2>
+			<div className="card_label">
+				<p>{title}</p>
+			</div>
 		</article>
 	);
 }

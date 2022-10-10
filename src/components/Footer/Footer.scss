@@ -1,0 +1,34 @@
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 209px;
+    background-color: black;
+    display: flex;
+    
+    &__text{
+        position: absolute;
+        left: 32.15%;
+        right: 32.22%;
+        top: 64.11%;
+        bottom: 13.88%;     
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+
+    img{
+        position: absolute;
+        left: 45.76%;
+        right: 45.76%;
+        top: 31.58%;
+        bottom: 49.55%;
+        width: 122px;
+        height: 40px;
+    }
+}

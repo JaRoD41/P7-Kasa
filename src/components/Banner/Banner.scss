@@ -1,11 +1,10 @@
 .banner-container{
+    position: relative;
     display: flex;
     width: 100%;
     max-width: 1240px;
     height: 223px;
-    background: url(../../assets/images/background-banner.png), url(../../assets/images/fond-noir-banner.png);
-    mix-blend-mode: darken;
-    opacity: 1;
+    background: url(../../assets/images/background-banner.png);
     border-radius: 25px;
     align-items: center;
     justify-content: center;
@@ -13,15 +12,23 @@
 }
 
 .banner-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
+    width: 100%;
+    height: 100%;
     font-size: 48px;
     font-weight: 500;
     line-height: 142.6%;
     color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
 
     &-container{
     display: flex;
-    width: auto;
-    height: 68px;
 }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner"
 import Card from "../../components/Cards/Card"
-import '../../components/Cards/Card.scss'
 import { Link } from "react-router-dom";
 import data from "../../datas/logements.json";
 

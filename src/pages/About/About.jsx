@@ -1,25 +1,16 @@
 import React from "react";
 import AboutBanner from "../../components/AboutBanner/AboutBanner";
 import Collapse from "../../components/Collapse/Collapse"
-
+import aboutArray from "../../datas/aboutArray.json"
 
 
 export default function About() {
 	return (
 		<div>
-			< AboutBanner />
-			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-					photos sont conformes aux logements, et toutes les informations sont
-					régulièrement vérifiées par nos équipes." />
-			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-					photos sont conformes aux logements, et toutes les informations sont
-					régulièrement vérifiées par nos équipes." />
-			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-					photos sont conformes aux logements, et toutes les informations sont
-					régulièrement vérifiées par nos équipes." />
-			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-					photos sont conformes aux logements, et toutes les informations sont
-					régulièrement vérifiées par nos équipes." />
+			<AboutBanner />
+			{aboutArray.map((rule) => (
+				<Collapse aboutTitle={rule.aboutTitle} aboutText={rule.aboutText} />
+			))}
 		</div>
 	);
 }

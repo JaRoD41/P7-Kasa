@@ -1,20 +1,46 @@
-import React from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import './Collapse.scss'
-import Chevron from '../../assets/images/down-chevron.png'
+import Chevron from '../../assets/images/vectorBas.svg'
 
 export default function Collapse() {
+
+  const [toggle, setToggle] = useState(false)
+  const [heightEl, setHeightEl] = useState()
+
+  const toggleState = () => {
+    setToggle(!toggle)
+  }
+
+  const refHeight = useRef()
+
+  useEffect(() => {
+    setHeightEl(`${refHeight.current.scrollHeight}px`)
+
+
+  }, [])
+
+
   return (
-    <div className='collapse-about'>
-
-    <div className='collapse-about__visible'>
-      <h2>Lorem ipsum dolor sit amet.</h2>
-      <img src={Chevron} alt="chevron down" />
-    </div>
-
-    <div className="collapse-about__toggle">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi odio quas labore earum culpa assumenda minus. Delectus, deserunt voluptates expedita labore sapiente sequi ex distinctio quasi quia cumque ratione!</p>
-    </div>
-
-    </div>
-  )
+		<div className="collapse-about">
+			<div className="collapseContainer">
+				<div onClick={toggleState} className="collapse-about__visible">
+					<h2>Fiabilité</h2>
+					<img src={Chevron} alt="chevron down" />
+				</div>
+			</div>
+			<div
+				ref={refHeight}
+				className={
+					toggle ? "collapse-about__toggle animated" : "collapse-about__toggle"
+				}
+				style={{ height: toggle ? `${heightEl}` : "0px" }}
+			>
+				<p aria-hidden={toggle ? "true" : "false"}>
+					Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+					photos sont conformes aux logements, et toutes les informations sont
+					régulièrement vérifiées par nos équipes.
+				</p>
+			</div>
+		</div>
+	);
 }

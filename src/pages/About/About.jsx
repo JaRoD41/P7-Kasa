@@ -8,7 +8,18 @@ export default function About() {
 	return (
 		<div>
 			< AboutBanner />
-			< Collapse />
+			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+					photos sont conformes aux logements, et toutes les informations sont
+					régulièrement vérifiées par nos équipes." />
+			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+					photos sont conformes aux logements, et toutes les informations sont
+					régulièrement vérifiées par nos équipes." />
+			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+					photos sont conformes aux logements, et toutes les informations sont
+					régulièrement vérifiées par nos équipes." />
+			< Collapse aboutTitle="Fiabilité" aboutText="Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+					photos sont conformes aux logements, et toutes les informations sont
+					régulièrement vérifiées par nos équipes." />
 		</div>
 	);
 }

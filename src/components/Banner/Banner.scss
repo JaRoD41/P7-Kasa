@@ -2,9 +2,9 @@
     position: relative;
     display: flex;
     width: 100%;
-    max-width: 1240px;
     height: 223px;
-    background: url(../../assets/images/background-banner.png);
+    background: url(../../assets/images/background-banner.png) no-repeat;
+    background-size: cover;
     border-radius: 25px;
     align-items: center;
     justify-content: center;

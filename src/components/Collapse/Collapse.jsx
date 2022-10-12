@@ -4,7 +4,7 @@ import Chevron from '../../assets/images/vectorBas.svg'
 
 export default function Collapse(props) {
 
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false)  // je 
   const [heightEl, setHeightEl] = useState()
 
   const toggleState = () => {

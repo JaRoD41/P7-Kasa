@@ -14,15 +14,23 @@ export default function FicheLogement() {
 	const equipments = pickedAppart.equipments;
 	const equip = equipments.map((item, index) => <li key={index} className="equipList">{item}</li>);
 	return (
-		<div key={params.id}>
+		<div key={params.id} className="fiche-container">
 			<Carrousel />
-			<h1>{pickedAppart.title}</h1>
-			<h3>{pickedAppart.location}</h3>
-			<Host />
-			{tags.map((tag) => (
-				<Tag key={tag} tag={tag} />
-			))}
-			<Rate />
+			<div className="title-host-container">
+				<div className="ficheTitleContainer">
+					<h1>{pickedAppart.title}</h1>
+					<h3>{pickedAppart.location}</h3>
+				</div>
+				<Host />
+			</div>
+			<div className="tags-container">
+				{tags.map((tag) => (
+					<Tag key={tag} tag={tag} />
+				))}
+			</div>
+			<div className="rate-container">
+				<Rate />
+			</div>
 			<div className="collapse-fiche-content">
 				<Collapse
 					aboutTitle="Description"

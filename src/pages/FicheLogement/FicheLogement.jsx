@@ -8,15 +8,19 @@ import Tag from "../../components/Tag/Tag";
 import data from "../../datas/logements.json";
 
 export default function FicheLogement() {
-	const params = useParams()
-	const pickedAppart = data.find(({ id }) => id === params.id)
+	const params = useParams();
+	const pickedAppart = data.find(({ id }) => id === params.id);
+	const tags = pickedAppart.tags;
+	console.log(tags);
 	return (
 		<div key={params.id}>
 			<Carrousel />
 			<h1>{pickedAppart.title}</h1>
 			<h3>{pickedAppart.location}</h3>
 			<Host />
-			<Tag />
+			{tags.map((tag) => (
+				<Tag key={tag} tag={tag}/>
+			))}
 			<Rate />
 			<div className="collapse-fiche-content">
 				<Collapse

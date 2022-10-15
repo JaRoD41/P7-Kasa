@@ -1,4 +1,5 @@
 import React from 'react'
+import './Carrousel.scss'
 
 export default function Carrousel() {
   return (

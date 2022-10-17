@@ -16,7 +16,7 @@ export default function Carrousel({ slides }) {
 
 	return (
 		<div className="carrousel-container">
-			<LeftArrow onClick={prevSlide} />
+			<LeftArrow onClick={(prevSlide)} />
 			<RightArrow onClick={nextSlide} />
 			{slides.map((slide, index) => (
 				<div key={index}>

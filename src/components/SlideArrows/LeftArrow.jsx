@@ -4,7 +4,7 @@ import "./SlideArrows.scss";
 
 export default function LeftArrow() {
 	return (
-		<div>
+		<div className="leftArrow">
 			<img src={left} alt="left arrow" />
 		</div>
 	);

@@ -64,3 +64,10 @@ main {
 .equipList {
   list-style-type: none;
 }
+
+.fiche-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -5,7 +5,7 @@ import './SlideArrows.scss'
 
 export default function RightArrow() {
   return (
-		<div>
+		<div className="rightArrow">
 			<img src={right} alt="right arrow" />
 		</div>
 	);

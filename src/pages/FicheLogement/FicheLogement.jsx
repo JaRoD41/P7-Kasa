@@ -8,11 +8,9 @@ import Tag from "../../components/Tag/Tag";
 import data from "../../datas/logements.json";
 
 export default function FicheLogement() {
-	const ImageData = []
 	const params = useParams();
 	const pickedAppart = data.find(({ id }) => id === params.id);
 	const slidePics = pickedAppart.pictures;
-	slidePics.map((pic) => ImageData.push(pic));
 	const tags = pickedAppart.tags;
 	const equipments = pickedAppart.equipments;
 	const equip = equipments.map((item, index) => (
@@ -22,7 +20,7 @@ export default function FicheLogement() {
 	));
 	return (
 		<div key={params.id} className="fiche-container">
-			<Carrousel slides={ImageData} />
+			<Carrousel slides={slidePics} />
 			<div className="title-tags-container">
 				<div className="title-container">
 					<h1>{pickedAppart.title}</h1>

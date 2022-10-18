@@ -1,23 +1,20 @@
 #carrousel-container {
     position: relative;
-    display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid blue;
 }
 
 .slideImage {
     display: flex;
     width: 100%;
+    height: 415px;
     object-fit: cover;
     }
 
 .rightArrow {
     display: flex;
     position: absolute;
-    top: 50%;
-    right: 20px;
+    top: 41%;
+    right: 2%;
     width: 47px;
     height: 79px;
     z-index: 10;
@@ -27,10 +24,20 @@
 .leftArrow {
     display: flex;
     position: absolute;
-    top: 50%;
-    left: 20px;
+    top: 41%;
+    left: 2%;
     width: 47px;
     height: 79px;
     z-index: 10;
     cursor: pointer;
+}
+
+.slide-number {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    left: 48%;
+    top: 86%;
 }

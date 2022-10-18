@@ -15,17 +15,19 @@ export default function Carrousel({ slides }) {
 	};
 
 	return (
-		<div className="carrousel-container">
-			<LeftArrow onClick={(prevSlide)} />
-			<RightArrow onClick={nextSlide} />
+		<section id="carrousel-container">
+			{length > 1 && <LeftArrow onClick={prevSlide} />}
+			{length > 1 && <RightArrow onClick={nextSlide} />}
 			{slides.map((slide, index) => (
 				<div key={index}>
 					{index === current && (
-						<img src={slide} alt="appartement" className="slideImage" />
+						<img src={slide} alt="appartement à louer" className="slideImage" />
+					)}
+					{index === current && (
+						<span className="slide-number">{current + 1}/{length}</span>
 					)}
 				</div>
 			))}
-		</div>
+		</section>
 	);
 }
-

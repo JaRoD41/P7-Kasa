@@ -3,8 +3,8 @@ import './Host.scss'
 
 export default function Host() {
   return (
-    <div>
+    <aside className='host-container'>
       <h1>Host</h1>
-    </div>
+    </aside>
   )
 }

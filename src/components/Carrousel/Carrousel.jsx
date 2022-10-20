@@ -16,15 +16,34 @@ export default function Carrousel({ slides }) {
 
 	return (
 		<section id="carrousel-container">
-			{length > 1 && <img src={left} alt="gauche" onClick={prevSlide} className="leftArrow" />}
-			{length > 1 && <img src={right} alt="droite" onClick={nextSlide} className="rightArrow" />}
+			{length > 1 && (
+				<img
+					src={left}
+					alt="gauche"
+					onClick={prevSlide}
+					className="leftArrow"
+				/>
+			)}
+			{length > 1 && (
+				<img
+					src={right}
+					alt="droite"
+					onClick={nextSlide}
+					className="rightArrow"
+				/>
+			)}
 			{slides.map((slide, index) => (
-				<div key={index}>
+				<div
+					key={index}
+					className={
+						current === index ? "slider active-anim" : "slider"
+					}
+				>
 					{index === current && (
-						<img src={slide} alt="appartement à louer" className="slideImage" />
+						<img src={slide} alt="appartement à louer" />
 					)}
 					{index === current && (
-						<span className="slide-number">
+						<span className="slider__number">
 							{current + 1}/{length}
 						</span>
 					)}
@@ -33,5 +52,3 @@ export default function Carrousel({ slides }) {
 		</section>
 	);
 }
-
-

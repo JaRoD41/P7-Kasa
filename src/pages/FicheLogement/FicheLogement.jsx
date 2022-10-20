@@ -11,7 +11,6 @@ export default function FicheLogement() {
 	const params = useParams();
 	const pickedAppart = data.find(({ id }) => id === params.id);
 	const slidePics = pickedAppart.pictures;
-	console.log(pickedAppart.host.picture);
 	const tags = pickedAppart.tags;
 	const equipments = pickedAppart.equipments;
 	const equip = equipments.map((item, index) => (
@@ -38,7 +37,7 @@ export default function FicheLogement() {
 					<Host hostName={pickedAppart.host.name} hostPic={pickedAppart.host.picture} />
 				</div>
 				<div className="rate-container">
-					<Rate />
+					<Rate score={pickedAppart.rating} />
 				</div>
 			</div>
 			<div className="collapse-fiche-container">

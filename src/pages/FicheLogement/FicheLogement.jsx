@@ -22,7 +22,7 @@ export default function FicheLogement() {
 		<div key={params.id} className="fiche-container">
 			<Carrousel slides={slidePics} />
 			<div className="title-tags-container">
-				<div className="title-container">
+				<div className="title-container redFont">
 					<h1>{pickedAppart.title}</h1>
 					<h3>{pickedAppart.location}</h3>
 				</div>
@@ -33,7 +33,7 @@ export default function FicheLogement() {
 				</div>
 			</div>
 			<div className="rate-host-container">
-				<div className="host-container">
+				<div className="host-container redFont">
 					<Host />
 				</div>
 				<div className="rate-container">

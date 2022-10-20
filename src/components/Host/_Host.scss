@@ -1,0 +1,34 @@
+.host-comp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    }
+
+
+.hostPicture {
+    display: flex;
+    margin-left: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #C4C4C4;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.host-name {
+    display: flex;
+    align-items: center;
+    width: 93px;
+    height: 66px;
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}

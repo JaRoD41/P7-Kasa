@@ -20,22 +20,18 @@ export default function Collapse(props) {
 	return (
 		// affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
 		<div className="collapse">
-			<div className="collapseContainer">
-				<div onClick={toggleState} className="collapse__visible">
-					<h2>{props.aboutTitle}</h2>
-					<img
-						className={toggle ? "chevron rotated" : "chevron"}
-						src={Chevron}
-						alt="chevron"
-					/>
-				</div>
+			<div onClick={toggleState} className="collapse__visible">
+				<h2>{props.aboutTitle}</h2>
+				<img
+					className={toggle ? "chevron rotated" : "chevron"}
+					src={Chevron}
+					alt="chevron"
+				/>
 			</div>
 			<div
 				ref={refHeight}
-				className={
-					toggle ? "collapse__toggle animated" : "collapse__toggle"
-				}
-				style={{ height: toggle ? `${heightEl}` : "0px" }}
+				className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
+				//style={{ height: toggle ? `${heightEl}` : "0px" }}
 			>
 				<p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p>
 			</div>

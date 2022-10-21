@@ -3,8 +3,8 @@ import "../../style/main.scss";
 
 export default function Tag(props) {
   return (
-    <div>
-      <div className='tagContainer'>{props.tag}</div>
-    </div>
-  )
+		<div className="tagContainer">
+			<span className='tagButton'>{props.tag}</span>
+		</div>
+	);
 }

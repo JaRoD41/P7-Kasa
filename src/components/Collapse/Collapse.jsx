@@ -19,7 +19,7 @@ export default function Collapse(props) {
 
 	return (
 		// affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
-		<div className="collapse">
+		<div className={`collapse ${props.aboutStyle}`}>
 			<div onClick={toggleState} className="collapse__visible">
 				<h2>{props.aboutTitle}</h2>
 				<img
@@ -31,7 +31,7 @@ export default function Collapse(props) {
 			<div
 				ref={refHeight}
 				className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
-				//style={{ height: toggle ? `${heightEl}` : "0px" }}
+				style={{ height: toggle ? `${heightEl}` : "0px" }}
 			>
 				<p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p>
 			</div>

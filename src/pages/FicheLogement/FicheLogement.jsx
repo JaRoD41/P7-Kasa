@@ -18,6 +18,8 @@ export default function FicheLogement() {
 			{item}
 		</li>
 	));
+	console.log(pickedAppart);
+	if(pickedAppart !== undefined) {
 	return (
 		<div key={params.id} className="fiche-container">
 			<Carrousel slides={slidePics} />
@@ -54,13 +56,16 @@ export default function FicheLogement() {
 			</div>
 		</div>
 	);
+						} else {
+							window.location.href ="/404";
+						}
 }
 
 /*
 export default function LocationPage() {
   const {id} = useParams();
   const infoLocation = Data.find ((location)=> location.id === id)
-  if(infoLocation !==undefined) {
+  if(pickedAppart !==undefined) {
   const { title , location, tags , host, rating, pictures, description, equipments} = infoLocation
   return (
     <div>

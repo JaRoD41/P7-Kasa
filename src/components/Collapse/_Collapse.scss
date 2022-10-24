@@ -3,8 +3,8 @@
 	margin: 31px auto 0;
 
 	&__visible {
-		background: #ff6060;
-		color: white;
+		background: $primary-color;
+		color: $tertiary-color;
 		cursor: pointer;
 		display: flex;
 		justify-content: space-between;
@@ -25,7 +25,7 @@
 		font-weight: 400;
 		line-height: 142.6%;
 		opacity: 0;
-		color: #ff6060;
+		color: $primary-color;
 		background: #f6f6f6;
 		border-radius: 5px;
 		transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;

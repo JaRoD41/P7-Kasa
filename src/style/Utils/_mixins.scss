@@ -1,0 +1,5 @@
+@mixin body-position {
+	max-width: $wmax;
+	min-width: $wmin;
+	margin: auto;
+}

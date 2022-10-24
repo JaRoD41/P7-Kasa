@@ -6,6 +6,10 @@
     border-radius: 10px;
     max-width: 340px;
 
+    @media screen and (max-width: $wmax) {
+        min-width: 335px;
+    }
+
     & img{
         display: flex;
         width: 100%;

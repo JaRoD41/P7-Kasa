@@ -3,3 +3,19 @@
 	min-width: $wmin;
 	margin: auto;
 }
+
+@mixin font12 {
+	font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: right;
+    line-height: 142.6%;
+}
+
+@mixin font24 {
+	font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: right;
+    line-height: 142.6%;
+}

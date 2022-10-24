@@ -2,16 +2,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 100px 0 100px;
+    margin: 40px 7% 0 7%;
+
+    @media screen and (max-width: 768px) {
+        margin: 5.3%;
+    }
 
     &__fig{
         display: flex;
         align-items: flex-start;
         margin: 0;
+
+        .img{
+            width: 210px;
+            height: 68px;
+}
+
+        @media screen and (max-width: 768px) {
+            width: 145px;
+            height: 47px;
+    }
     }
 }
 
-.logo img{
-    width: 210px;
-    height: 68px;
-}
+

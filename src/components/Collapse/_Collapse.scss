@@ -68,3 +68,13 @@
     flex-direction: column;
     align-items: center;
 }
+
+.collapse-fiche-container {
+	display: flex;
+    width: 100%;
+	gap: 6%;
+}
+
+.equipList {
+	list-style-type: none;
+}

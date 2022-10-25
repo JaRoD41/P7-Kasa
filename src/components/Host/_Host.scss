@@ -1,34 +1,45 @@
 .host-comp {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    }
-
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
 
 .hostPicture {
-    display: flex;
-    margin-left: 10px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: #C4C4C4;
+	display: flex;
+	margin-left: 10px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #c4c4c4;
 
-    & img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+	& img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		object-fit: cover;
+	}
 }
 
 .host-name {
-    display: flex;
-    align-items: center;
-    width: 93px;
-    height: 66px;
-    text-align: right;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
+	display: flex;
+	align-items: center;
+	width: 93px;
+	height: 66px;
+	text-align: right;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 142.6%;
+}
+
+.rate-host-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hostInfo-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }

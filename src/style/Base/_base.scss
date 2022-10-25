@@ -29,3 +29,21 @@ main {
 .redFont {
 	color: $primary-color;
 }
+
+.fiche-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bl-msk {
+	background: rgba(0, 0, 0, 0.3);
+	mix-blend-mode: darken;
+	border-radius: 25px;
+}
+
+.wh-msk {
+	background: #f7f7f7;
+	border-radius: 10px;
+}

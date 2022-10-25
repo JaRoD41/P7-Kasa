@@ -35,7 +35,11 @@ export default function Carrousel({ slides }) {
 			{slides.map((slide, index) => (
 				<div
 					key={index}
-					className={current === index ? "slider bl-msk wh-msk active-anim" : "slider bl-msk wh-msk"}
+					className={
+						current === index
+							? "slider bl-msk wh-msk active-anim"
+							: "slider bl-msk wh-msk"
+					}
 				>
 					{index === current && <img src={slide} alt="appartement à louer" />}
 					{index === current && (

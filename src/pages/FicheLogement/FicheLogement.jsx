@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Collapse from "../../components/Collapse/Collapse";
 import Host from "../../components/Host/Host";
@@ -9,18 +9,32 @@ import data from "../../datas/logements.json";
 
 export default function FicheLogement() {
 	const params = useParams();
-	const pickedAppart = data.find(({ id }) => id === params.id);
-	
-	if (pickedAppart !== undefined) {
-		const slidePics = pickedAppart.pictures;
-		const tags = pickedAppart.tags;
-		const equipments = pickedAppart.equipments;
-		const equip = equipments.map((item, index) => (
+	const navigate = useNavigate();
+	const [pickedAppart, setPickedAppart] = useState();
+	useEffect(() => {
+		const getData = async () => {
+			const res = await data.find(({ id }) => id === params.id);
+			if (res === undefined) {
+				navigate("/404", { state: { message: "Can't get data" } });
+			}
+			console.log("res =>", res);
+			setPickedAppart(res);
+		};
+		getData();
+	}, []);
+	console.log("pickedAppart", pickedAppart);
+	const slidePics = pickedAppart && pickedAppart.pictures;
+	const tags = pickedAppart && pickedAppart.tags;
+	const equipments = pickedAppart && pickedAppart.equipments;
+	const equip =
+		pickedAppart &&
+		equipments.map((item, index) => (
 			<li key={index} className="equipList">
 				{item}
 			</li>
 		));
-		return (
+	return (
+		pickedAppart && (
 			<div key={params.id} className="fiche-container">
 				<Carrousel slides={slidePics} />
 				<section className="hostInfo-container">
@@ -55,27 +69,6 @@ export default function FicheLogement() {
 					<Collapse aboutTitle="Équipements" aboutText={equip} />
 				</div>
 			</div>
-		);
-	} else {
-		window.location.href = "/404";
-	}
+		)
+	);
 }
-
-/*
-export default function LocationPage() {
-  const {id} = useParams();
-  const infoLocation = Data.find ((location)=> location.id === id)
-  if(pickedAppart !==undefined) {
-  const { title , location, tags , host, rating, pictures, description, equipments} = infoLocation
-  return (
-    <div>
-        <Carousel pictures={pictures}/>
-        <Info title={title} location= {location} tags={tags} host={host} rating={rating}/>
-        <Accordion description={description} equipments={equipments}/>
-    </div>
-  )
-  }else{
-    window.location.href ="/404";
-  }
-}
-*/

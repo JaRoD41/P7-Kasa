@@ -5,24 +5,25 @@ import Collapse from "../../components/Collapse/Collapse";
 import Host from "../../components/Host/Host";
 import Rate from "../../components/Rate/Rate";
 import Tag from "../../components/Tag/Tag";
-import data from "../../datas/logements.json";
+import axios from "axios";
 
 export default function FicheLogement() {
 	const params = useParams();
 	const navigate = useNavigate();
+
 	const [pickedAppart, setPickedAppart] = useState();
 	useEffect(() => {
 		const getData = async () => {
-			const res = await data.find(({ id }) => id === params.id);
-			if (res === undefined) {
+			const res = await axios.get("/logements.json");
+			const picked = res.data.find(({ id }) => id === params.id);
+			res.data.map(() => setPickedAppart(picked));
+			if (picked === undefined) {
 				navigate("/404", { state: { message: "Can't get data" } });
 			}
-			console.log("res =>", res);
-			setPickedAppart(res);
+			console.log("gneugneu");
 		};
 		getData();
-	}, []);
-	console.log("pickedAppart", pickedAppart);
+	}, []); // array vide du useEffect pour ne lancer qu'une seule fois
 	const slidePics = pickedAppart && pickedAppart.pictures;
 	const tags = pickedAppart && pickedAppart.tags;
 	const equipments = pickedAppart && pickedAppart.equipments;

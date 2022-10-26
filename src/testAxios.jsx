@@ -16,12 +16,13 @@ export default function FicheLogement() {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await data.find(({ id }) => id === params.id);
-      if (res === undefined) {
+      const res = await axios.get("/logements.json");
+      if (res.status !== 200) {
         navigate("/404", { state: { message: "Can't get data" } });
       }
-      console.log("res =>", res);
-      setPickedAppart(res);
+      console.log("res =>", res.data);
+​
+      res.data.map((e) => setPicckedAppart(e));
     };
     getData();
   }, []);

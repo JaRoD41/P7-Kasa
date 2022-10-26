@@ -3,25 +3,45 @@
 	color: #ff6060;
 	flex-direction: column;
 	align-items: center;
-	margin: 100px 0;
+	margin: 22px 15%;
 }
 
 .errorNumber {
+	position: absolute;
 	display: flex;
-	font-size: 288px;
+	align-items: center;
+	justify-content: center;
+	font-size: 96px;
+	font-style: normal;
 	font-weight: 700;
-	margin: auto;
+	line-height: 142.6%;
 }
 
 .errorText {
+	position: absolute;
 	display: flex;
-	font-size: 36px;
+	align-items: flex-end;
+	justify-content: center;
+	left: 15.2%;
+	right: 15.47%;
+	top: 45.81%;
+	bottom: 47.78%;
+	font-size: 18px;
+	font-style: normal;
 	font-weight: 500;
+	line-height: 142.6%;
 }
 
 .errorLinkHome {
+	position: absolute;
 	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 	text-decoration: none;
+	left: 20.27%;
+	right: 20.8%;
+	top: 68.6%;
+	bottom: 28.94%;
 	color: #ff6060;
 	font-size: 18px;
 	font-weight: 500;

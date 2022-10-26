@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import left from "../../assets/images/vector-left.svg";
 import right from "../../assets/images/vector-right.svg";
 

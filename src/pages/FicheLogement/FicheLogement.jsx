@@ -20,7 +20,6 @@ export default function FicheLogement() {
 			if (picked === undefined) {
 				navigate("/404", { state: { message: "Can't get data" } });
 			}
-			console.log("gneugneu");
 		};
 		getData();
 	}, []); // array vide du useEffect pour ne lancer qu'une seule fois

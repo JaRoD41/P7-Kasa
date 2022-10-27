@@ -103,8 +103,13 @@
 
 .collapse-fiche-container {
 	display: flex;
+	flex-direction: column;
 	width: 100%;
-	gap: 6%;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		flex-direction: row;
+		gap: 6%;
+	}
 }
 
 .equipList {

@@ -2,15 +2,21 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .hostPicture {
 	display: flex;
 	margin-left: 10px;
-	width: 64px;
-	height: 64px;
+	width: 32px;
+	height: 32px;
 	border-radius: 50%;
 	background: #c4c4c4;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		width: 64px;
+		height: 64px;
+	}
 
 	& img {
 		width: 100%;
@@ -23,23 +29,84 @@
 .host-name {
 	display: flex;
 	align-items: center;
-	width: 93px;
+	justify-content: flex-end;
+	width: 83px;
 	height: 66px;
 	text-align: right;
-	font-size: 18px;
+	font-size: 12px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 142.6%;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		font-size: 18px;
+		
+	}
 }
 
 .rate-host-container {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		flex-direction: column;
+	}
 }
 
 .hostInfo-container {
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	justify-content: space-between;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		flex-direction: row;
+	}
 }
+
+// .host-comp {
+// 	display: flex;
+// 	width: 100%;
+// 	justify-content: space-between;
+// }
+
+// .hostPicture {
+// 	display: flex;
+// 	margin-left: 10px;
+// 	width: 64px;
+// 	height: 64px;
+// 	border-radius: 50%;
+// 	background: #c4c4c4;
+
+// 	& img {
+// 		width: 100%;
+// 		height: 100%;
+// 		border-radius: 50%;
+// 		object-fit: cover;
+// 	}
+// }
+
+// .host-name {
+// 	display: flex;
+// 	align-items: center;
+// 	width: 93px;
+// 	height: 66px;
+// 	text-align: right;
+// 	font-size: 18px;
+// 	font-style: normal;
+// 	font-weight: 500;
+// 	line-height: 142.6%;
+// }
+
+// .rate-host-container {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// }
+
+// .hostInfo-container {
+// 	display: flex;
+// 	width: 100%;
+// 	justify-content: space-between;
+// }

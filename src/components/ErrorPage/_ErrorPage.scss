@@ -3,11 +3,10 @@
 	color: #ff6060;
 	flex-direction: column;
 	align-items: center;
-	margin: 22px 15%;
+	margin: 22px 6%;
 }
 
 .errorNumber {
-	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,37 +14,53 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 142.6%;
+	margin: 12rem 0 1rem 0;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		font-size: 288px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 142.6%;
+		margin: 0;
+	}
 }
 
 .errorText {
-	position: absolute;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	left: 15.2%;
-	right: 15.47%;
-	top: 45.81%;
-	bottom: 47.78%;
+	text-align: center;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 142.6%;
+	margin: 0 11%;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 142.6%;
+		margin: 0;
+	}
 }
 
 .errorLinkHome {
-	position: absolute;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	text-decoration: none;
-	left: 20.27%;
-	right: 20.8%;
-	top: 68.6%;
-	bottom: 28.94%;
 	color: #ff6060;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 500;
-	margin-top: 100px;
+	margin-top: 9rem;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 142.6%;
+	}
 
 	&:hover {
 		text-decoration-line: underline;

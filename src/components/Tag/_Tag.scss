@@ -7,10 +7,7 @@
     background: $primary-color;
     color: $tertiary-color;
     margin-top: 4%;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
+    @include font500(10px);
     height: 18px;
     border-radius: 5px;
     margin-right: 10px;
@@ -20,7 +17,7 @@
         flex-direction: column;
         height: 25px;
         border-radius: 10px;
-        font-size: 14px;
+        @include font500(14px);
     }
 }
 
@@ -31,25 +28,19 @@
 
     h1 {
         margin: 2% 0;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 142.6%;
+        @include font500(18px);
 
         @media screen and (min-width: $breakpoint-tablet) {
-            font-size: 36px;
+            @include font500(36px);
         }
     }
 
     h3 {
         margin: 2% 0;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 142.6%;
+        @include font500(14px);
 
         @media screen and (min-width: $breakpoint-tablet) {
-            font-size: 18px;
+            @include font500(18px);
         }
     }
 }

@@ -10,13 +10,13 @@
 
 	&_link-home,
 	&_link-about {
-		@include font12-right;
+		@include font-right(12px);
 		color: $primary-color;
 		text-decoration: none;
 		padding-left: 0.8rem;
 
 		@media screen and (min-width: $breakpoint-tablet) {
-			@include font24-right;
+			@include font-right(24px);
 			padding-left: 3.5rem;
 		}
 

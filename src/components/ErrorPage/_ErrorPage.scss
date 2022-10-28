@@ -8,17 +8,11 @@
 
 .errorNumber {
 	@include flex-center;
-	font-size: 96px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 142.6%;
+	@include font700(96px);
 	margin: 12rem 0 1rem 0;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		font-size: 288px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 142.6%;
+		@include font700(288px);
 		margin: 0;
 	}
 }
@@ -28,17 +22,11 @@
 	align-items: flex-end;
 	justify-content: center;
 	text-align: center;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 142.6%;
+	@include font500(18px);
 	margin: 0 11%;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		font-size: 36px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 142.6%;
+		@include font500(36px);
 		margin: 0;
 	}
 }
@@ -49,15 +37,11 @@
 	justify-content: center;
 	text-decoration: none;
 	color: #ff6060;
-	font-size: 14px;
-	font-weight: 500;
+	@include font500(14px);
 	margin-top: 9rem;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		font-size: 18px;
-		font-style: normal;
-		font-weight: 500;
-		line-height: 142.6%;
+		@include font500(18px);
 	}
 
 	&:hover {

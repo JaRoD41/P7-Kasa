@@ -50,8 +50,7 @@
         @media screen and (min-width: $breakpoint-tablet) {
             display: block;
             position: absolute;
-            font-size: 18px;
-            font-weight: 500;
+            @include font500(18px);
             color: $tertiary-color;
             left: 48%;
             top: 86%;

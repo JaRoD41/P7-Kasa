@@ -1,9 +1,9 @@
 .aboutBackground {
     @include flex-center;
+    @include bkgrd($about-background-mobile);
     width: 100%;
     height: 223px;
     margin-top: 20px;
-    @include bkgrd($about-background-mobile);
     border-radius: 10px;
 
     @media screen and (min-width: $breakpoint-tablet) {

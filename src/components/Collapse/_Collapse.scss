@@ -23,24 +23,15 @@
 		}
 
 		h2 {
-			font-size: 13px;
-			font-style: normal;
-			font-weight: 500;
-			line-height: 142.6%;
+			@include font500(13px);
 
 			@media screen and (min-width: $breakpoint-tablet) {
-				font-size: 18px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: 142.6%;
+				@include font500(24px);
 			}
 		}
 	}
 
 	&__toggle {
-		font-style: normal;
-		font-weight: 400;
-		line-height: 142.6%;
 		opacity: 0;
 		color: $primary-color;
 		background: #F7F7F7;
@@ -51,10 +42,10 @@
 			margin: 0;
 			padding: 22px 15px;
 			pointer-events: none;
-			font-size: 12px;
+			@include font400(12px);
 
 			@media screen and (min-width: $breakpoint-tablet) {
-				font-size: 18px;
+				@include font400(24px);
 			}
 		}
 	}

@@ -4,19 +4,32 @@
     margin: auto;
 }
 
-@mixin font12-right {
-    font-size: 12px;
+@mixin font-right($size) {
+    font-size: $size;
     font-style: normal;
     font-weight: 500;
     text-align: right;
     line-height: 142.6%;
 }
 
-@mixin font24-right {
-    font-size: 24px;
+@mixin font700($size) {
+    font-size: ($size);
     font-style: normal;
     font-weight: 500;
-    text-align: right;
+    line-height: 142.6%;
+}
+
+@mixin font500($size) {
+    font-size: ($size);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+@mixin font400($size) {
+    font-size: ($size);
+    font-style: normal;
+    font-weight: 400;
     line-height: 142.6%;
 }
 

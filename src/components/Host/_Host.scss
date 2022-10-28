@@ -51,6 +51,7 @@
 
 	@media screen and (min-width: $breakpoint-tablet) {
 		flex-direction: column;
+		justify-content: center;
 	}
 }
 
@@ -62,6 +63,7 @@
 
 	@media screen and (min-width: $breakpoint-tablet) {
 		flex-direction: row;
+		align-items: flex-end;
 	}
 }
 

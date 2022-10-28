@@ -1,6 +1,6 @@
 .errorContainer {
 	display: flex;
-	color: #ff6060;
+	color: $primary-color;
 	flex-direction: column;
 	align-items: center;
 	margin: 22px 6%;
@@ -36,7 +36,7 @@
 	align-items: flex-end;
 	justify-content: center;
 	text-decoration: none;
-	color: #ff6060;
+	color: $primary-color;
 	@include font500(14px);
 	margin-top: 9rem;
 

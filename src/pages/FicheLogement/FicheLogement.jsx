@@ -14,7 +14,7 @@ export default function FicheLogement() {
 	const [pickedAppart, setPickedAppart] = useState();
 	useEffect(() => {
 		const getData = async () => {
-			const res = await axios.get("/logements.json");
+			const res = await axios.get("/logements.json"); 
 			const picked = res.data.find(({ id }) => id === params.id);
 			res.data.map(() => setPickedAppart(picked));
 			if (picked === undefined) {

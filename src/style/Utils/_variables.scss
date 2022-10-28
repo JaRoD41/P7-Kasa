@@ -5,9 +5,12 @@ $tertiary-color: #FFFFFF;
 $footer-color: #000000;
 $background-color: rgba(0,0,0,0.3);
 
+$about-background: $background-color url(../../assets/images/about-background.png);
+$about-background-mobile: $background-color url(../../assets/images/mobile-about-background.png);
+$banner-background: $background-color url(../../assets/images/background-banner.png);
+
 $breakpoint-desktop: 1440px;
 $breakpoint-tablet: 769px;
 
 $wmin: 375px;
 $wmax: 768px;
-

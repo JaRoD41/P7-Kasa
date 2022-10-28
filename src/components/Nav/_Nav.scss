@@ -10,17 +10,13 @@
 
 	&_link-home,
 	&_link-about {
+		@include font12-right;
 		color: $primary-color;
 		text-decoration: none;
 		padding-left: 0.8rem;
-		font-size: 12px;
-		font-style: normal;
-		font-weight: 500;
-		text-align: right;
-		line-height: 142.6%;
 
 		@media screen and (min-width: $breakpoint-tablet) {
-			@include font24;
+			@include font24-right;
 			padding-left: 3.5rem;
 		}
 

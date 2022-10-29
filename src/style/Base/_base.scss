@@ -48,7 +48,7 @@ main {
 }
 
 .wh-msk {
-	background: #f7f7f7;
+	background: $secondary-color;
 	@include small-radius;
 
 	@media screen and (min-width: $breakpoint-tablet) {

@@ -34,7 +34,7 @@
 	&__toggle {
 		opacity: 0;
 		color: $primary-color;
-		background: #F7F7F7;
+		background: $secondary-color;
 		border-radius: 5px;
 		transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
 
@@ -73,20 +73,11 @@
 
 .about-style {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex-column;
 
 	@media screen and (min-width: $breakpoint-tablet) {
 		width: 87.5%;
 	}
-}
-
-.fiche-style {
-	margin-top: 31px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .collapse-fiche-container {

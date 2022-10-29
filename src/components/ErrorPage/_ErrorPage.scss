@@ -15,10 +15,14 @@
 	}
 }
 
-.errorText {
+%flex-error {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+}
+
+.errorText {
+	@extend %flex-error;
 	text-align: center;
 	@include font(18px, 500);
 	margin: 0 11%;
@@ -30,9 +34,7 @@
 }
 
 .errorLinkHome {
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+	@extend %flex-error;
 	text-decoration: none;
 	color: $primary-color;
 	@include font(14px, 500);

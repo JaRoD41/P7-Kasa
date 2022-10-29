@@ -25,14 +25,12 @@
 	height: 48px;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		@include flex-center;
 		@include WH-full;
 		@include font(48px, 500);
-		color: $tertiary-color;
 		@include big-radius;
 	}
 }

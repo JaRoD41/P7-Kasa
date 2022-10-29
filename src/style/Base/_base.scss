@@ -42,16 +42,16 @@ main {
 }
 
 .bl-msk {
-	background: rgba(0, 0, 0, 0.3);
+	background: $background-color;
 	mix-blend-mode: darken;
-	border-radius: 25px;
+	@include big-radius;
 }
 
 .wh-msk {
 	background: #f7f7f7;
-	border-radius: 10px;
+	@include small-radius;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		border-radius: 25px;
+		@include big-radius;
 	}
 }

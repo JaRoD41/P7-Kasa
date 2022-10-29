@@ -1,7 +1,5 @@
 .nav-header {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+	@include flex-end;
 	text-transform: uppercase;
 
 	@media screen and (min-width: $breakpoint-tablet) {

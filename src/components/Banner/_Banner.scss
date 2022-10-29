@@ -1,11 +1,11 @@
 .banner-container {
 	height: 111px;
-	border-radius: 10px;
+	@include small-radius;
 	@include flex-banner;
 
 	@media screen and (min-width: $breakpoint-tablet) {
 		height: 223px;
-		border-radius: 25px;
+		@include big-radius;
 		@include flex-banner;
 	}
 }
@@ -20,7 +20,7 @@
 	font-weight: 500;
 	line-height: 100%;
 	color: $tertiary-color;
-	border-radius: 10px;
+	@include small-radius;
 	width: 217px;
 	height: 48px;
 
@@ -34,6 +34,6 @@
 		height: 100%;
 		@include font500(48px);
 		color: $tertiary-color;
-		border-radius: 25px;
+		@include big-radius;
 	}
 }

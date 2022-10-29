@@ -16,7 +16,7 @@
     @media screen and (min-width: $breakpoint-tablet) {
         flex-direction: column;
         height: 25px;
-        border-radius: 10px;
+        @include small-radius;
         @include font500(14px);
     }
 }

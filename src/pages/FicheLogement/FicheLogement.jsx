@@ -14,7 +14,7 @@ export default function FicheLogement() {
 	const [pickedAppart, setPickedAppart] = useState();
 	useEffect(() => {
 		const getData = async () => {
-			const res = await axios.get("/logements.json"); 
+			const res = await axios.get("/logements.json");
 			const picked = res.data.find(({ id }) => id === params.id);
 			res.data.map(() => setPickedAppart(picked));
 			if (picked === undefined) {
@@ -22,6 +22,7 @@ export default function FicheLogement() {
 			}
 		};
 		getData();
+		// eslint-disable-next-line
 	}, []); // array vide du useEffect pour ne lancer qu'une seule fois
 	const slidePics = pickedAppart && pickedAppart.pictures;
 	const tags = pickedAppart && pickedAppart.tags;

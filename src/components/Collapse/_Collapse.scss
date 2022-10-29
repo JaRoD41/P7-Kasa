@@ -81,8 +81,7 @@
 }
 
 .collapse-fiche-container {
-	display: flex;
-	flex-direction: column;
+	@include flex-column;
 	width: 100%;
 
 	@media screen and (min-width: $breakpoint-tablet) {

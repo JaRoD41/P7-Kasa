@@ -22,9 +22,7 @@
 }
 
 .title-tags-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column;
 
     h1 {
         margin: 2% 0;

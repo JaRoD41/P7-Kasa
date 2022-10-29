@@ -8,11 +8,11 @@
 
 .errorNumber {
 	@include flex-center;
-	@include font700(96px);
+	@include font(96px, 700);
 	margin: 12rem 0 1rem 0;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		@include font700(288px);
+		@include font(288px, 700);
 		margin: 0;
 	}
 }
@@ -22,11 +22,11 @@
 	align-items: flex-end;
 	justify-content: center;
 	text-align: center;
-	@include font500(18px);
+	@include font(18px, 500);
 	margin: 0 11%;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		@include font500(36px);
+		@include font(36px, 500);
 		margin: 0;
 	}
 }
@@ -37,11 +37,11 @@
 	justify-content: center;
 	text-decoration: none;
 	color: $primary-color;
-	@include font500(14px);
+	@include font(14px, 500);
 	margin-top: 9rem;
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		@include font500(18px);
+		@include font(18px, 500);
 	}
 
 	&:hover {

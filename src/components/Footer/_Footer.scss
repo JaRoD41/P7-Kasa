@@ -7,7 +7,7 @@
 	flex-direction: column;
 
 	&__text {
-		@include font500(12px);
+		@include font(12px, 500);
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
@@ -16,7 +16,7 @@
 		margin: 4% 0 3% 0;
 
 		@media screen and (min-width: $breakpoint-tablet) {
-			@include font500(24px);
+			@include font(24px, 500);
 		}
 	}
 

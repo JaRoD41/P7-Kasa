@@ -4,6 +4,7 @@ $tertiary-color: #FFFFFF;
 
 $footer-color: #000000;
 $background-color: rgba(0,0,0,0.3);
+$linear-cards: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
 $about-background: $background-color url(../../assets/images/about-background.png);
 $about-background-mobile: $background-color url(../../assets/images/mobile-about-background.png);
@@ -14,3 +15,9 @@ $breakpoint-tablet: 769px;
 
 $wmin: 375px;
 $wmax: 768px;
+
+$map: (
+    key-01: value-01,
+    key-02: value-02,
+    key-03: value-03
+);

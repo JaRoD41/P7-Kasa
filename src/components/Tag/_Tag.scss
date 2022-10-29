@@ -7,7 +7,7 @@
     background: $primary-color;
     color: $tertiary-color;
     margin-top: 4%;
-    @include font500(10px);
+    @include font(10px, 500);
     height: 18px;
     border-radius: 5px;
     margin-right: 10px;
@@ -17,7 +17,7 @@
         flex-direction: column;
         height: 25px;
         @include small-radius;
-        @include font500(14px);
+        @include font(14px, 500);
     }
 }
 
@@ -28,19 +28,19 @@
 
     h1 {
         margin: 2% 0;
-        @include font500(18px);
+        @include font(18px, 500);
 
         @media screen and (min-width: $breakpoint-tablet) {
-            @include font500(36px);
+            @include font(36px, 500);
         }
     }
 
     h3 {
         margin: 2% 0;
-        @include font500(14px);
+        @include font(14px, 500);
 
         @media screen and (min-width: $breakpoint-tablet) {
-            @include font500(18px);
+            @include font(18px, 500);
         }
     }
 }

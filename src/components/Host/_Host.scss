@@ -17,8 +17,7 @@
 	}
 
 	& img {
-		width: 100%;
-		height: 100%;
+		@include WH-full;
 		border-radius: 50%;
 		object-fit: cover;
 	}
@@ -29,10 +28,10 @@
 	width: 63px;
 	height: 66px;
 	text-align: right;
-	@include font500(12px);
+	@include font(12px, 500);
 
 	@media screen and (min-width: $breakpoint-tablet) {
-		@include font500(18px);
+		@include font(18px, 500);
 		
 	}
 }

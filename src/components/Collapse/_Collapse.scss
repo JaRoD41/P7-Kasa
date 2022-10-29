@@ -23,10 +23,10 @@
 		}
 
 		h2 {
-			@include font500(13px);
+			@include font(13px, 500);
 
 			@media screen and (min-width: $breakpoint-tablet) {
-				@include font500(24px);
+				@include font(24px, 500);
 			}
 		}
 	}
@@ -42,10 +42,10 @@
 			margin: 0;
 			padding: 22px 15px;
 			pointer-events: none;
-			@include font400(12px);
+			@include font(12px, 400);
 
 			@media screen and (min-width: $breakpoint-tablet) {
-				@include font400(24px);
+				@include font(24px, 400);
 			}
 		}
 	}

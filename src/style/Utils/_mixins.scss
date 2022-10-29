@@ -4,6 +4,11 @@
     margin: auto;
 }
 
+@mixin WH-full {
+    width: 100%;
+    height: 100%;
+}
+
 @mixin font-right($size) {
     font-size: $size;
     font-style: normal;
@@ -12,24 +17,10 @@
     line-height: 142.6%;
 }
 
-@mixin font700($size) {
+@mixin font($size, $weight) {
     font-size: ($size);
     font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
-}
-
-@mixin font500($size) {
-    font-size: ($size);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
-}
-
-@mixin font400($size) {
-    font-size: ($size);
-    font-style: normal;
-    font-weight: 400;
+    font-weight: $weight;
     line-height: 142.6%;
 }
 
@@ -66,4 +57,38 @@
 
 @mixin big-radius {
     border-radius: 25px;
+}
+
+@mixin rightArrow-style {
+    display: flex;
+    position: absolute;
+    top: 47%;
+    right: 2%;
+    width: 12px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        width: 47px;
+        height: 79px;
+        top: 42%;
+    }
+}
+
+@mixin leftArrow-style {
+    display: flex;
+    position: absolute;
+    top: 47%;
+    left: 2%;
+    width: 12px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        width: 47px;
+        height: 79px;
+        top: 42%;
+    }
 }

@@ -44,7 +44,7 @@
 		@include font(18px, 500);
 	}
 
-	&:hover {
+	&:hover, &:focus{
 		text-decoration-line: underline;
 	}
 }

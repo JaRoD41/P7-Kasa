@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 export default function MiniSlide({ slides }) {
-	const [isShown, setIsShown] = useState(false);
 	const [current, setCurrent] = useState(0); //je définie l'index du premier slide à 0
 	const length = slides.length; // longueur du tableau de slides
 	const timeSlide = 2000;
 	const nextSlide = () => {
 		setCurrent(current === length - 1 ? 0 : current + 1); // on repart au premier slide quand on arrive au dernier
 	};
+	setTimeout(nextSlide(), timeSlide);
 	return (
 		<div className="miniSlide">
 			<section id="carrousel-container">
@@ -25,7 +25,7 @@ export default function MiniSlide({ slides }) {
 								src={slide}
 								alt="appartement à louer"
 								onMouseEnter={() => nextSlide()}
-								onMouseLeave={() => setIsShown(false)}
+								onMouseLeave={() => setCurrent(0)}
 							/>
 						)}
 					</div>

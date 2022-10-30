@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Cards/Card";
+import MiniSlide from "../../components/Carrousel/MiniSlide";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -17,6 +18,7 @@ export default function Home() {
 					<div className="card_logement" key={id}>
 						<Link className="link_card_logement" to={`/logement/${appart.id}`}>
 							<Card cover={appart.cover} title={appart.title} />
+							{/* <MiniSlide /> */}
 						</Link>
 					</div>
 				))}

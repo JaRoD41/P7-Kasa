@@ -9,8 +9,8 @@ export default function MiniSlide({ slides }) {
 	};
 	setTimeout(nextSlide(), timeSlide);
 	return (
-		<div className="miniSlide">
-			<section id="carrousel-container">
+		<div className="card-logement">
+			{/* <section className="card-logement">
 				{slides.map((slide, index) => (
 					<div
 						key={index}
@@ -24,13 +24,14 @@ export default function MiniSlide({ slides }) {
 							<img
 								src={slide}
 								alt="appartement à louer"
-								onMouseEnter={() => nextSlide()}
+								onClick={() => nextSlide()}
 								onMouseLeave={() => setCurrent(0)}
 							/>
 						)}
 					</div>
 				))}
-			</section>
+			</section> */}
+			<div className="minislide">minislide</div>
 		</div>
 	);
 }

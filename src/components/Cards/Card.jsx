@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Card({ cover, title }) {
 	return (
 		<article className="card-logement">

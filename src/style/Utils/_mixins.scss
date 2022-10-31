@@ -4,6 +4,10 @@
     margin: auto;
 }
 
+@mixin boxShadow {
+    box-shadow: rgba(255, 96, 96, 0.9) 0 0 22px 6px;
+}
+
 @mixin WH-full {
     width: 100%;
     height: 100%;

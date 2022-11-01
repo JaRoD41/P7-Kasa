@@ -1,20 +1,50 @@
 .tagContainer {
     display: flex;
-    
 }
 
 .tagButton {
-    display: flex;
+    @include flex-center;
     background: $primary-color;
     color: $tertiary-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
-    height: 25px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
+    margin-top: 4%;
+    @include font(10px, 500);
+    height: 18px;
+    border-radius: 5px;
     margin-right: 10px;
-    padding: 2px 10px 0 10px
+    padding: 2px 10px 0 10px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        flex-direction: column;
+        height: 25px;
+        @include small-radius;
+        @include font(14px, 500);
+    }
+}
+
+.title-tags-container {
+    @include flex-column;
+
+    h1 {
+        margin: 2% 0;
+        @include font(18px, 500);
+
+        @media screen and (min-width: $breakpoint-tablet) {
+            @include font(36px, 500);
+        }
+    }
+
+    h3 {
+        margin: 2% 0;
+        @include font(14px, 500);
+
+        @media screen and (min-width: $breakpoint-tablet) {
+            @include font(18px, 500);
+        }
+    }
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }

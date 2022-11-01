@@ -1,38 +1,28 @@
-.container{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 209px;
-    margin-top: 5%;
-    background-color: $footer-color;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    &__text{
-        left: 32.15%;
-        right: 32.22%;
-        top: 64.11%;
-        bottom: 13.88%;     
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 142.6%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        color: $tertiary-color;
-        width: 100%;
-        margin: 4% 0 3% 0;
-    }
+.foot-container {
+	@include flex-center;
+	width: 100%;
+	height: 209px;
+	margin-top: 5%;
+	background-color: $footer-color;
+	flex-direction: column;
 
-    img{
-        margin-top: 2%;
-        left: 45.76%;
-        right: 45.76%;
-        top: 31.58%;
-        bottom: 49.55%;
-        width: 122px;
-        height: 40px;
-    }
+	&__text {
+		@include font(12px, 500);
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		color: $tertiary-color;
+		width: 100%;
+		margin: 4% 0 3% 0;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			@include font(24px, 500);
+		}
+	}
+
+	img {
+		margin-top: 2%;
+		width: 122px;
+		height: 40px;
+	}
 }

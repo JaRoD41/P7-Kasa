@@ -4,6 +4,8 @@ Projet n°7 de la formation Developpeur Web OPENCLASSROOMS
 ## Contexte
 
 Kasa me recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+![Capture d’écran 2022-10-30 à 22 04 42](https://user-images.githubusercontent.com/67756654/198901475-819084cc-e564-45b8-8d0b-5a6a20abb924.png)
+
 
 ## Objectif 
 

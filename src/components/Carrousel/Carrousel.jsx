@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import left from "../../assets/images/vector-left.svg";
 import right from "../../assets/images/vector-right.svg";
-import "../../style/main.scss";
 
 export default function Carrousel({ slides }) {
 	const [current, setCurrent] = useState(0); //je définie l'index du premier slide à 0
@@ -35,7 +34,11 @@ export default function Carrousel({ slides }) {
 			{slides.map((slide, index) => (
 				<div
 					key={index}
-					className={current === index ? "slider bl-msk wh-msk active-anim" : "slider bl-msk wh-msk"}
+					className={
+						current === index
+							? "slider bl-msk wh-msk active-anim"
+							: "slider bl-msk wh-msk"
+					}
 				>
 					{index === current && <img src={slide} alt="appartement à louer" />}
 					{index === current && (

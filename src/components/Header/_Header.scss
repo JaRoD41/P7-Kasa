@@ -1,28 +1,25 @@
-.headerWrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 7% 0 7%;
+.headerWrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5%;
 
-    @media screen and (max-width: 768px) {
-        margin: 5.3%;
-    }
+	@media screen and (min-width: $breakpoint-tablet) {
+		margin: 40px 100px 49px 100px;
+	}
 
-    &__fig{
-        display: flex;
-        align-items: flex-start;
-        margin: 0;
+	&__fig {
+		display: flex;
+		align-items: flex-start;
+		margin: 0;
+		width: 9rem;
 
-        .img{
-            width: 210px;
-            height: 68px;
+		@media screen and (min-width: $breakpoint-tablet) {
+			width: 13.2rem;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
 }
-
-        @media screen and (max-width: 768px) {
-            width: 145px;
-            height: 47px;
-    }
-    }
-}
-
-

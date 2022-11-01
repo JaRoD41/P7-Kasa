@@ -1,12 +1,27 @@
 .rate-comp {
     display: flex;
     justify-content: space-between;
-    width: 196px;
-    height: 36px;
+    width: 98px;
+    height: 18px;
     margin-top: 24px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        width: 196px;
+        height: 36px;
+    }
+}
+
+.rate-container {
+    display: flex;
+    align-items: flex-start;
 }
 
 .star {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        width: 30px;
+        height: 30px;
+    }
 }

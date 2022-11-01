@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react"; //import des hooks de base react
-import "../../style/main.scss";
 import Chevron from "../../assets/images/vectorBas.svg";
 
 export default function Collapse(props) {

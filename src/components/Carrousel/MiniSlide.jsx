@@ -23,19 +23,14 @@ export default function MiniSlide({ slides, title, id }) {
 	}, slideDelay);
 
 	return (
-		<article className="card-logement">
-			<img
-				key={id}
-				src={picsArray[current]}
-				alt="appartement à louer"
-				// onMouseOver={() => nextSlide()}
-				// onMouseout={() => stopShow()}
-			/>
+		<article
+			className="card-logement"
+			onMouseOver={() => nextSlide()}
+			onMouseout={() => stopShow()}
+		>
+			<img key={id} src={picsArray[current]} alt="appartement à louer" />
 			<div className="card-logement__layer">
-				<p className="card-logement__title">
-					{title} <br />
-					state = {current}
-				</p>
+				<p className="card-logement__title">{title}</p>
 			</div>
 		</article>
 	);

@@ -6,7 +6,7 @@
     margin: 2% 0;
     overflow: hidden;
 
-    @media screen and (min-width: $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-desktop) {
         height: 415px;
     }
 }
@@ -22,7 +22,7 @@
     opacity: 0;
     transition: opacity ease-in-out 0.6s;
 
-    @media screen and (min-width: $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-desktop) {
         @include big-radius;
     }
 
@@ -37,7 +37,7 @@
         mix-blend-mode: normal;
         @include small-radius;
 
-        @media screen and (min-width: $breakpoint-tablet) {
+        @media screen and (min-width: $breakpoint-desktop) {
             @include big-radius;
         }
     }
@@ -45,7 +45,7 @@
     &__number {
         display: none;
 
-        @media screen and (min-width: $breakpoint-tablet) {
+        @media screen and (min-width: $breakpoint-desktop) {
             display: block;
             position: absolute;
             @include font(18px, 500);

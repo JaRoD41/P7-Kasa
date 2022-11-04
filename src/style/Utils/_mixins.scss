@@ -79,7 +79,7 @@
     z-index: 10;
     cursor: pointer;
 
-    @media screen and (min-width: $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-desktop) {
         width: 47px;
         height: 79px;
         top: 42%;
@@ -96,7 +96,7 @@
     z-index: 10;
     cursor: pointer;
 
-    @media screen and (min-width: $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-desktop) {
         width: 47px;
         height: 79px;
         top: 42%;

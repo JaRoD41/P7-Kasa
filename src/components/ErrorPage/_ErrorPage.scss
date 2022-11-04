@@ -9,7 +9,7 @@
 	@include font(96px, 700);
 	margin: 12rem 0 1rem 0;
 
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (min-width: $breakpoint-desktop) {
 		@include font(288px, 700);
 		margin: 0;
 	}
@@ -27,7 +27,7 @@
 	@include font(18px, 500);
 	margin: 0 11%;
 
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (min-width: $breakpoint-desktop) {
 		@include font(36px, 500);
 		margin: 0;
 	}
@@ -40,7 +40,7 @@
 	@include font(14px, 500);
 	margin-top: 9rem;
 
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (min-width: $breakpoint-desktop) {
 		@include font(18px, 500);
 	}
 

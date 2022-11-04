@@ -15,7 +15,7 @@
 		width: 100%;
 		margin: 4% 0 3% 0;
 
-		@media screen and (min-width: $breakpoint-tablet) {
+		@media screen and (min-width: $breakpoint-desktop) {
 			@include font(24px, 500);
 		}
 	}

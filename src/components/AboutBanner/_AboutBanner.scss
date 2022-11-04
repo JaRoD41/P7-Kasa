@@ -6,7 +6,7 @@
     margin-top: 20px;
     @include small-radius;
 
-    @media screen and (min-width: $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-desktop) {
         @include bkgrd($about-background);
         @include big-radius;
     }

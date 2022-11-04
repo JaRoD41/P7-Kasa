@@ -9,7 +9,7 @@ body {
 	@include body-position;
 
 
-	@media (min-width: $breakpoint-tablet) {
+	@media (min-width: $breakpoint-desktop) {
 		max-width: 100%;
 	}
 
@@ -22,7 +22,7 @@ body {
 main {
 	margin: 5%;
 
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (min-width: $breakpoint-desktop) {
 		margin: 0 100px;
 	}
 }
@@ -51,7 +51,7 @@ main {
 	background: $secondary-color;
 	@include small-radius;
 
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (min-width: $breakpoint-desktop) {
 		@include big-radius;
 	}
 }

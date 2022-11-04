@@ -3,7 +3,7 @@
 	@include small-radius;
 	@include flex-banner;
 
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (min-width: $breakpoint-desktop) {
 		height: 223px;
 		@include big-radius;
 		@include flex-banner;
@@ -24,7 +24,7 @@
 	width: 217px;
 	height: 48px;
 
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (min-width: $breakpoint-desktop) {
 		top: 0;
 		left: 0;
 		right: 0;

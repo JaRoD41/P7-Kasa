@@ -6,11 +6,11 @@ import aboutArray from "../../datas/aboutArray.json"  // j'ai créé un fichier 
 
 export default function About() {
 	return (
-		<div>
+		<>
 			<AboutBanner />
 			{aboutArray.map((rule, id) => (
 				<Collapse key={id} aboutTitle={rule.aboutTitle} aboutText={rule.aboutText} aboutStyle="about-style" />
 			))}
-		</div>
+		</>
 	);
 }

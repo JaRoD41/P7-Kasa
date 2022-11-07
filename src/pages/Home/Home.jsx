@@ -12,7 +12,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div>
+		<>
 			<Banner />
 			<div className="cards-container">
 				{data.map((appart, id) => (
@@ -23,6 +23,6 @@ export default function Home() {
 					</div>
 				))}
 			</div>
-		</div>
+		</>
 	);
 }

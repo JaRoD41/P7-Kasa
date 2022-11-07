@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Nav() {
-  return (
+	return (
 		<nav className="nav-header">
 			<Link to="/" className="nav-header_link-home">
 				Accueil

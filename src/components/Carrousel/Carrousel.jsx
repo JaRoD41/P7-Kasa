@@ -33,20 +33,20 @@ export default function Carrousel({ slides }) {
 			)}
 			{slides.map((slide, index) => (
 				<div
-					key={index}
+					key={index}		 // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
 					className={
 						current === index
 							? "slider bl-msk wh-msk active-anim"
 							: "slider bl-msk wh-msk"
 					}
 				>
-					{index === current && <img src={slide} alt="appartement à louer" />}
+					{index === current && <img src={slide} alt="appartement à louer" />} 
 					{index === current && (
 						<span className="slider__number">
 							{current + 1}/{length}
 						</span>
 					)}
-				</div>
+				</div> // affichage du numéro de slide seulement si supérieur à 1
 			))}
 		</section>
 	);

@@ -1,6 +1,5 @@
-import React from "react";
 import emptyStar from "../../assets/images/emptyStar.svg";
-import fullStar from "../../assets/images/star-rate.svg"
+import fullStar from "../../assets/images/star-rate.svg";
 
 export default function Rate({ score }) {
 	const stars = [1, 2, 3, 4, 5];
@@ -14,7 +13,7 @@ export default function Rate({ score }) {
 						src={fullStar}
 						alt="rating star"
 					/>
-				) : (
+				) : ( //affichage conditionnel des étoiles de score, pleine ou vide selon le score passé en props
 					<img
 						key={level.toString()}
 						className="star"

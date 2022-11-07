@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Host(props) {
 	return (
 		<aside className="host-comp">

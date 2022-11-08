@@ -17,7 +17,7 @@ export default function Carrousel({ slides }) {
 		<section id="carrousel-container">
 			{length > 1 && (
 				<img
-					src={left}
+					src={left} //Affichage des flèches seulement si length > 1
 					alt="gauche"
 					onClick={prevSlide}
 					className="leftArrow"
@@ -33,20 +33,20 @@ export default function Carrousel({ slides }) {
 			)}
 			{slides.map((slide, index) => (
 				<div
-					key={index}		 // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
+					key={index} // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
 					className={
 						current === index
 							? "slider bl-msk wh-msk active-anim"
 							: "slider bl-msk wh-msk"
 					}
 				>
-					{index === current && <img src={slide} alt="appartement à louer" />} 
+					{index === current && <img src={slide} alt="appartement à louer" />}
 					{index === current && (
 						<span className="slider__number">
 							{current + 1}/{length}
 						</span>
 					)}
-				</div> // affichage du numéro de slide seulement si supérieur à 1
+				</div>
 			))}
 		</section>
 	);
